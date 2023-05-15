@@ -1,4 +1,6 @@
 import 'package:booking/const.dart';
+import 'package:booking/openBookings.dart';
+import 'package:booking/upcomingBookings.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreens extends StatefulWidget {
@@ -9,7 +11,7 @@ class HomeScreens extends StatefulWidget {
 class _HomeScreensState extends State<HomeScreens> {
   int _currentIndex = 0;
 
-  List<Widget> _screens = [    HomeScreen(),     HomeScreen(),     HomeScreen(),     HomeScreen(),     HomeScreen(),  ];
+  List<Widget> _screens = [    HomeScreen(),     UpcomingBookingsScreen(),     Openbookings(),     HomeScreen(),     HomeScreen(),  ];
 
   List<BottomNavigationBarItem> _menuItems = [    BottomNavigationBarItem(      icon: Icon(Icons.home),      label: 'Home',    ),    BottomNavigationBarItem(      icon: Icon(Icons.search),      label: 'Search',    ),    BottomNavigationBarItem(      icon: Icon(Icons.favorite),      label: 'Favorites',    ),    BottomNavigationBarItem(      icon: Icon(Icons.shopping_cart),      label: 'Cart',    ),    BottomNavigationBarItem(      icon: Icon(Icons.person),      label: 'Profile',    ),  ];
 

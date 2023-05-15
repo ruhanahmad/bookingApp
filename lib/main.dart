@@ -1,3 +1,4 @@
+import 'package:booking/homePage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'welcome.dart';
@@ -12,7 +13,9 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter OTP Verification',
       debugShowCheckedModeBanner: false,
-      home: Welcome(),
+      home: 
+      Welcome(),
+      // HomeScreens()
     );
   }
 }
